@@ -1,0 +1,1 @@
+ejercicio coje los archivos que estan en pdf el usuario da la ruta y los pasa a rar en sola carpeta

@@ -1,0 +1,140 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="562,1287.3333333333333" sap2010:WorkflowViewState.IdRef="Main_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="60">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Plugin.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Description: A sequence for checking if the year is a Leap Year or not using If statement." DisplayName="Leap Year using If" sap:VirtualizedContainerService.HintSize="572,1222.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="Year" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:UnresolvedActivity Info="{x:Null}" DisplayName="Input Year (InputDialog)" sap:VirtualizedContainerService.HintSize="510,98.66666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_3" ShowExpanded="False">
+      <p:UnresolvedActivity.Body>
+        <scg:List x:TypeArguments="Activity" Capacity="0" />
+      </p:UnresolvedActivity.Body>
+      <p:UnresolvedActivity.PropertiesContainer>
+        <x:String x:Key="Options">{x:Null}</x:String>
+        <x:String x:Key="OptionsString">{x:Null}</x:String>
+        <x:String x:Key="IsPassword">False</x:String>
+        <x:String x:Key="Label">Please enter the year:</x:String>
+        <x:String x:Key="Title">Year Dialog</x:String>
+      </p:UnresolvedActivity.PropertiesContainer>
+    </p:UnresolvedActivity>
+    <If Condition="[((Year mod 4 = 0) and (Year mod 100 &lt;&gt;0)) or (Year mod 400 = 0)]" DisplayName="If statement for checking Leap Year" sap:VirtualizedContainerService.HintSize="510,942.6666666666666" sap2010:WorkflowViewState.IdRef="If_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap2010:Annotation.AnnotationText="Displays the message if the condition is True." DisplayName="True" sap:VirtualizedContainerService.HintSize="476,379.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <p:UnresolvedActivity Info="{x:Null}" DisplayName="Print Result True (MessageBox)" sap:VirtualizedContainerService.HintSize="434,292" sap2010:WorkflowViewState.IdRef="MessageBox_8" ShowExpanded="True">
+            <p:UnresolvedActivity.Body>
+              <scg:List x:TypeArguments="Activity" Capacity="0" />
+            </p:UnresolvedActivity.Body>
+            <p:UnresolvedActivity.PropertiesContainer>
+              <x:String x:Key="Caption">{x:Null}</x:String>
+              <x:String x:Key="ChosenButton">{x:Null}</x:String>
+              <x:String x:Key="AutoCloseAfter">00:00:00</x:String>
+              <x:String x:Key="Text">["This year is a Leap Year"]</x:String>
+            </p:UnresolvedActivity.PropertiesContainer>
+          </p:UnresolvedActivity>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap2010:Annotation.AnnotationText="Displays the message if the condition is False." DisplayName="False" sap:VirtualizedContainerService.HintSize="476,379.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <p:UnresolvedActivity Info="{x:Null}" DisplayName="Print Result False (MessageBox)" sap:VirtualizedContainerService.HintSize="434,292" sap2010:WorkflowViewState.IdRef="MessageBox_9" ShowExpanded="True">
+            <p:UnresolvedActivity.Body>
+              <scg:List x:TypeArguments="Activity" Capacity="0" />
+            </p:UnresolvedActivity.Body>
+            <p:UnresolvedActivity.PropertiesContainer>
+              <x:String x:Key="Caption">{x:Null}</x:String>
+              <x:String x:Key="ChosenButton">{x:Null}</x:String>
+              <x:String x:Key="AutoCloseAfter">00:00:00</x:String>
+              <x:String x:Key="Text">["This year is not a Leap Year"]</x:String>
+            </p:UnresolvedActivity.PropertiesContainer>
+          </p:UnresolvedActivity>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>

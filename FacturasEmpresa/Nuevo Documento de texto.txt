@@ -1,0 +1,1 @@
+ejercicio de tener varias facturas de varias empresas y organizarlas por carpetas con uipath
